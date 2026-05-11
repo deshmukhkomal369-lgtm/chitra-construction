@@ -221,24 +221,11 @@ body {
   flex-wrap: wrap;
 }
 
-.hidden-content {  display: none;  margin-top: 15px;}
-.read-more-btn {  
-  display: inline-block;  
-  padding: 14px 32px;  
-  background: #f4b400;  
-  color: #111;  
-  border: none;  
-  border-radius: 6px; 
-  font-weight: 700;  
-  cursor: pointer;  
-  transition: 0.3s ease;  
-  margin-top: 20px;
+.hidden-content {  
+  display: none;  
+  margin-top: 15px;
 }
 
-.read-more-btn:hover { 
-   background: #d99c00; 
-    transform: translateY(-2px);
-  }
 
 .card-container,
 .pricing-container {
