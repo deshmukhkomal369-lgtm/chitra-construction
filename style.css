@@ -98,7 +98,6 @@ body {
 .home {
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 30px;
   padding: 120px 2rem 4rem;
   display: flex;
   flex-direction: row;
@@ -348,7 +347,7 @@ body {
   padding: 80px 1rem 2rem;
   gap: 1rem;
   flex-direction: row;
-  alight-items: center;
+  align-items: center;
 }
   .home-text {
     flex: 1.3;
