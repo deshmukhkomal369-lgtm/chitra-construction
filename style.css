@@ -1,12 +1,12 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
 body {
@@ -28,6 +28,7 @@ body {
   width: 100%;
 }
 
+
 .navbar {
   max-width: 1200px;
   margin: 0 auto;
@@ -37,8 +38,8 @@ body {
   align-items: center;
 }
 
-/* LOGO */
-
+/* logo */
+    
 .brand {
   display: flex;
   align-items: center;
@@ -60,8 +61,8 @@ body {
   white-space: nowrap;
 }
 
-/* NAVIGATION */
-
+    /* NAV BAR */
+    
 .nav-links {
   list-style: none;
   display: flex;
@@ -79,13 +80,13 @@ body {
   color: #f4b400;
 }
 
-/* GENERAL SECTIONS */
-
+    /* GENERAL SECTIONS */
+    
 .section {
   max-width: 1200px;
   margin: 0 auto;
   padding: 80px 20px;
-  scroll-margin-top: 120px;
+  scroll-margin-top:  120px;
 }
 
 .section h2 {
@@ -108,21 +109,17 @@ body {
 }
 
 .home-text {
-  flex: 1.2;
-  text-align: left;
-  order: 1;
+  flex: 1;
 }
 
 .home-image {
-  flex: 0.8;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  order: 2;
 }
 
 .home-image img {
-  display: block;
   width: auto;
   max-width: 100%;
   height: auto;
@@ -131,18 +128,10 @@ body {
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
-
 .home h1 {
   font-size: 2rem;
   line-height: 1.3;
 }
-.home-text,
-.home-image {
-  flex: 1;
-}
-
-/* BUTTONS */
-
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -161,8 +150,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* READ MORE BUTTON */
-
+/* Read More Button */
 .read-more-btn {
   display: inline-block;
   padding: 14px 32px;
@@ -185,8 +173,7 @@ body {
   display: none;
   margin-top: 15px;
 }
-
-/* ABOUT SECTION */
+    
 
 .about-section {
   padding: 80px 20px;
@@ -197,6 +184,7 @@ body {
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
+
   display: flex;
   align-items: center;
   gap: 50px;
@@ -210,7 +198,6 @@ body {
 .about-image img {
   width: 100%;
   max-width: 400px;
-  height: auto;
   border-radius: 10px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
@@ -227,7 +214,31 @@ body {
   margin-bottom: 30px;
 }
 
-/* CARDS */
+.card-container,
+.pricing-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hidden-content {  display: none;  margin-top: 15px;}
+.read-more-btn {  
+  display: inline-block;  
+  padding: 14px 32px;  
+  background: #f4b400;  
+  color: #111;  
+  border: none;  
+  border-radius: 6px; 
+  font-weight: 700;  
+  cursor: pointer;  
+  transition: 0.3s ease;  
+  margin-top: 20px;
+}
+
+.read-more-btn:hover { 
+   background: #d99c00; 
+    transform: translateY(-2px);
+  }
 
 .card-container,
 .pricing-container {
@@ -254,7 +265,6 @@ body {
   margin-bottom: 1rem;
 }
 
-/* PORTFOLIO */
 
 .portfolio-grid {
   display: grid;
@@ -270,8 +280,6 @@ body {
   font-weight: bold;
 }
 
-/* PRICING */
-
 .price {
   font-size: 2rem;
   font-weight: bold;
@@ -281,8 +289,6 @@ body {
 .featured {
   border: 3px solid #4f46e5;
 }
-
-/* CONTACT FORM */
 
 .contact-form {
   max-width: 700px;
@@ -307,8 +313,6 @@ body {
   border-radius: 8px;
 }
 
-/* FOOTER */
-
 .footer {
   text-align: center;
   padding: 2rem;
@@ -316,57 +320,13 @@ body {
   color: #fff;
 }
 
-/* TABLET & SMALL LAPTOPS */
-
-@media (max-width: 992px) {
-  .home {
-    padding: 100px 1.5rem 3rem;
-    gap: 1.5rem;
-  }
-
-  .home-image img {
-    max-height: 320px;
-  }
-
-  .about-content h2 {
-    font-size: 2.5rem;
-  }
-
-  .about-content p {
-    font-size: 1.1rem;
-  }
-}
-
-/* MOBILE & TABLETS */
-
 @media (max-width: 768px) {
   html {
     scroll-padding-top: 120px;
   }
-.home {
-  padding: 80px 1rem 2rem;
-  gap: 1rem;
-  flex-direction: row;
-  align-items: center;
-}
-  .home-text {
-    flex: 1.3;
-    text-align: left;
-  }
-  home-image{
-    flex: 0.7;
-  }
-  home-image img{
-    max-height: 220px;
-    width: auto;
-    max-width: 100%;
-  }
-  .section,
-  .about-section,
-  .home {
+  section {
     scroll-margin-top: 120px;
   }
-
   /* Navbar */
   .navbar {
     flex-direction: column;
@@ -394,11 +354,13 @@ body {
     gap: 1rem;
   }
 
-  /* Home */
+  /* Home Section */
   .home {
-    padding: 80px 1rem 2rem;
-    gap: 1rem;
-    text-align: left;
+    height: 60vh;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+    scroll-margin-top: 120px;
   }
 
   .home h1 {
@@ -406,11 +368,12 @@ body {
     line-height: 1.3;
   }
 
-  .home-image img {
-    max-height: 220px;
+  .home-image {
+    max-height: 320px;
+    margin-top: 1.5rem;
   }
 
-  /* About */
+  /* About Section */
   .about-container {
     flex-direction: column;
     text-align: center;
@@ -426,12 +389,11 @@ body {
   }
 
   /* Cards */
-  .card-container,
-  .pricing-container {
+  .card-container {
     flex-direction: column;
   }
 
-  /* Portfolio */
+  /* Projects */
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
@@ -440,13 +402,13 @@ body {
     padding: 2rem 1rem;
   }
 
-  /* Section Padding */
+  /* General Section Padding */
   .section,
   .about-section {
     padding: 3rem 1rem;
   }
 
-  /* Contact */
+  /* Contact Form */
   .contact-form {
     padding: 1.5rem;
   }
@@ -456,28 +418,4 @@ body {
     padding: 1.5rem 1rem;
     font-size: 0.9rem;
   }
-}
-
-/* SMALL PHONES */
-
-@media (max-width: 480px) {
-  .home {
-    gap: 0.75rem;
   }
-
-  .home h1 {
-    font-size: 1.6rem;
-  }
-
-  .home-image img {
-    max-height: 180px;
-  }
-
-  .brand-name {
-    font-size: 1rem;
-  }
-
-  .nav-links {
-    gap: 0.75rem;
-  }
-}
