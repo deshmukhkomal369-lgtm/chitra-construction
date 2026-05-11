@@ -225,13 +225,7 @@ body {
   display: none;  
   margin-top: 15px;
 }
-.toggle-btn {
-  padding: 10px 20px;
-  background: #c19a5b;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
+
 
 .card-container,
 .pricing-container {
