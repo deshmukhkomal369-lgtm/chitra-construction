@@ -98,13 +98,13 @@ body {
 
 .home {
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   padding: 4rem 2rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-   justify-content: space-between;
-  text-align: left;
+  justify-content: center;
+  text-align: center;
   gap: 2rem;
 }
 
@@ -115,21 +115,10 @@ body {
 .home-image {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   border-radius: 16px;
 }
-
-.home-image img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 400px;
-  object-fit: contain;
-  border-radius: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -322,6 +311,3 @@ body {
     grid-template-columns: 1fr;
   }
 }
-
-
-  }
