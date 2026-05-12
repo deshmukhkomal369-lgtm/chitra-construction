@@ -1,7 +1,7 @@
  * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
@@ -10,8 +10,8 @@ html {
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  font-family: 'Poppins', sans-serif;
   color: #222;
   background: #f7f7fb;
 }
@@ -27,7 +27,6 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   width: 100%;
 }
-
 
 .navbar {
   max-width: 1200px;
@@ -59,8 +58,10 @@ body {
   font-weight: 700;
   color: #f4b400;
   white-space: nowrap;
-}
-
+} 
+/* .logo {
+  font-size: 1.5rem;
+} */
     /* NAV BAR */
     
 .nav-links {
@@ -86,7 +87,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 4rem 2rem;
-  scroll-margin-top:  120px;
+  scroll-margin-top: 120px;
 }
 
 .section h2 {
@@ -98,13 +99,13 @@ body {
 
 .home {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   padding: 4rem 2rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-between;
+  text-align: left;
   gap: 2rem;
 }
 
@@ -114,11 +115,14 @@ body {
 
 .home-image {
   flex: 1;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  border-radius: 16px;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 50px;
 }
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -296,7 +300,7 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .hero,
+  .home,
   .navbar {
     flex-direction: column;
     text-align: center;
@@ -311,3 +315,6 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+
+  
